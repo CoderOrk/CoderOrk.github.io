@@ -67,6 +67,19 @@ button:hover {
   border-radius: 0.625rem;
 }
 
+@media only screen and (max-width: 768px) {
+  button {
+    width: 50%;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  button {
+    width: 80%;
+  }
+}
+
 /* Header Settings */
 header {
   background-color: rgb(0, 0, 0);
@@ -115,6 +128,26 @@ header .nav-links a {
   margin: 0.625rem;
 }
 
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .banner h3 {
+    padding: 1rem;
+  }
+}
+
 /* Landing/Banner */
 .landing {
   background-image: url("./Images/Default_cybernetic_orc_typing_on_computer_0.jpg");
@@ -156,6 +189,26 @@ header .nav-links a {
   font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .quote-container {
+    display: none;
+  }
+
+  .banner {
+    height: auto;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .banner .desktop {
+    display: none;
+  }
+
+  .banner .mobile {
+    display: block;
+  }
+}
+
 /* Mission */
 .mission {
   background-color: rgb(0, 0, 0);
@@ -165,7 +218,7 @@ header .nav-links a {
   border-bottom: 1px solid rgb(151, 119, 14);
 }
 
-/* Features */
+/* Services */
 .features {
   background-color: rgb(97, 112, 61);
 }
@@ -186,10 +239,29 @@ header .nav-links a {
 .feature {
   background-color: rgb(0, 0, 0);
   color: rgb(97, 112, 61);
+  width: 300px;
+  margin: 2rem 0;
 }
 
 .feature p {
   margin: 1rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-container {
+    justify-content: space-between;
+  }
+
+  .feature {
+    width: 50%;
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .feature {
+    width: 90%;
+  }
 }
 
 /* Warband */
@@ -200,6 +272,7 @@ header .nav-links a {
 .member {
   background-color: rgb(97, 112, 61);
   color: rgb(0, 0, 0);
+  width: 350px;
   margin: 1.25rem 1.25rem;
 }
 
@@ -221,6 +294,15 @@ footer {
   padding: 1.25rem;
 }
 
+footer p {
+  margin: 0 0.25rem;
+}
+
+footer .copyright {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
 #footer-img {
   justify-self: center;
   height: 6rem;
@@ -232,13 +314,13 @@ footer {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 15%;
 }
 
 .icon-container {
-  height: 30%;
-  width: 30%;
+  /* height: 30%;
+  width: 30%; */
   margin: auto 1rem;
 }
 
@@ -246,4 +328,37 @@ footer {
   margin: 0 0.75rem;
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 950px){
+  footer {
+    justify-content: space-between;
+  }
+
+  #footer-img {
+    display: none;
+  }
+
+  .socials {
+    width: 50%;
+  }
+
+  .icon {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px){
+  footer {
+    padding: .75rem;
+  }
+
+  .icon-container {
+    height: 50%;
+    width: 50%;
+  }
+
+  .icon {
+    margin: auto 0.75rem;
+  }
 }
