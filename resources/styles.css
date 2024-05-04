@@ -148,6 +148,12 @@ header .mobile {
   }
 }
 
+@media only screen and (max-width: 340px) {
+  header .nav .mobile a {
+    font-size: 1rem;
+  }
+}
+
 /* Landing/Banner */
 .landing {
   background-image: url("./Images/Default_cybernetic_orc_typing_on_computer_0.jpg");
@@ -190,6 +196,10 @@ header .mobile {
 }
 
 @media only screen and (max-width: 768px) {
+  .landing {
+    background-position: center;
+  }
+
   .quote-container {
     display: none;
   }
@@ -229,7 +239,7 @@ header .mobile {
 
 .features-container {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   margin: 0.625rem;
   line-height: 2;
@@ -330,7 +340,7 @@ footer .copyright {
   width: 100%;
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 950px) {
   footer {
     justify-content: space-between;
   }
@@ -348,9 +358,9 @@ footer .copyright {
     width: 50%;
   }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   footer {
-    padding: .75rem;
+    padding: 0.75rem;
   }
 
   .icon-container {
